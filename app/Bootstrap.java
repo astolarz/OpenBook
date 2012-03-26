@@ -23,7 +23,7 @@ public class Bootstrap extends Job {
 			Photo photo;
 			String path = new java.io.File(".").getCanonicalPath() + "/public/images/";
 			Photos.initFileToPhoto(path+"matrixWhite.jpg", "http://media.photobucket.com/image/matrix%20white/thomastamblyn/MatrixWhite.jpg");
-
+			Photos.initFileToPhoto(path+"default.png","Default Smiley Face Profile Photo");//2
 			Fixtures.loadModels("skinTemplates.yml");//initial data for skin templates
 			Fixtures.loadModels("initial-data.yml");//rest of the data
 			List<User> users= User.findAll();
